@@ -1,0 +1,114 @@
+/* Hubium design system — generated from design-system/tokens.json by scripts/tokens-css.mjs. Do not edit by hand. */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #1b1d22;
+  --surface: #f7f7f8;
+  --card: #ffffff;
+  --card-foreground: #1b1d22;
+  --muted: #f1f2f4;
+  --muted-foreground: #565c68;
+  --border: #e4e6ea;
+  --input: #d7dae0;
+  --accent: #4f46e5;
+  --accent-foreground: #ffffff;
+  --accent-soft: #eef1fe;
+  --ring: var(--accent);
+  --destructive: #c42b2b;
+  --destructive-foreground: #ffffff;
+  --success: #146c34;
+  --success-soft: #e8f6ed;
+  --warning: #8a5100;
+  --warning-soft: #fdf3e1;
+  --overlay: #00000066;
+  --shadow-xs: 0 1px 2px 0 #0000000d;
+  --shadow-sm: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+  --shadow-lg: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --background: #111318;
+    --foreground: #e8eaee;
+    --surface: #171a20;
+    --card: #1a1d24;
+    --card-foreground: #e8eaee;
+    --muted: #22262e;
+    --muted-foreground: #a0a6b2;
+    --border: #2c313b;
+    --input: #3a404b;
+    --accent: #909bf9;
+    --accent-foreground: #0e101f;
+    --accent-soft: #1f2343;
+    --ring: var(--accent);
+    --destructive: #f07272;
+    --destructive-foreground: #1a0d0d;
+    --success: #5fd08a;
+    --success-soft: #16301f;
+    --warning: #f0b44c;
+    --warning-soft: #33280f;
+  }
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #111318;
+  --foreground: #e8eaee;
+  --surface: #171a20;
+  --card: #1a1d24;
+  --card-foreground: #e8eaee;
+  --muted: #22262e;
+  --muted-foreground: #a0a6b2;
+  --border: #2c313b;
+  --input: #3a404b;
+  --accent: #909bf9;
+  --accent-foreground: #0e101f;
+  --accent-soft: #1f2343;
+  --ring: var(--accent);
+  --destructive: #f07272;
+  --destructive-foreground: #1a0d0d;
+  --success: #5fd08a;
+  --success-soft: #16301f;
+  --warning: #f0b44c;
+  --warning-soft: #33280f;
+}
+
+:root {
+  --spacing: 0.25rem;
+  --space-0\.5: 2px;
+  --space-1: 4px;
+  --space-1\.5: 6px;
+  --space-2: 8px;
+  --space-2\.5: 10px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-12: 48px;
+  --radius-xs: 0.25rem;
+  --radius-checkbox: 0.3rem;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 0.625rem;
+  --radius-xl: 14px;
+  --radius-full: 9999px;
+  --size-control-sm: 32px;
+  --size-control-md: 36px;
+  --size-control-lg: 44px;
+  --size-checkbox: 1rem;
+  --size-icon: 16px;
+  --size-icon-lg: 20px;
+  --size-icon-xl: 32px;
+  --size-avatar: 32px;
+  --size-sidebar: 15rem;
+  --size-topbar: 56px;
+  --size-content: 72rem;
+  --size-dialog: 32rem;
+  --size-menu: 12rem;
+  --opacity-disabled: 0.5;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
