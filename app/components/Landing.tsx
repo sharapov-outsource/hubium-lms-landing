@@ -58,7 +58,7 @@ function Hero({ dict }: { dict: Dict }) {
             </a>
           </div>
           <p className="hero-install">
-            {h.install}: <code>docker compose up</code>
+            {h.install}: <code>sudo bash install-hubium.sh</code>
           </p>
         </div>
         <div className="frame hero-shot">

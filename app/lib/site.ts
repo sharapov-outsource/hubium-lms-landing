@@ -3,7 +3,7 @@
 /** Public address of the landing, without a trailing slash. Canonical URLs, sitemap and OG use it. */
 export const SITE_URL = "https://hubium.example";
 
-export const GITHUB_URL = "https://github.com/sharapov-outsource/hubium";
+export const GITHUB_URL = "https://github.com/sharapov-outsource/hubium-lms";
 
 /** Yandex Metrika counter. While null, neither the counter nor the cookie banner is shown. */
 export const METRIKA_ID: number | null = null;

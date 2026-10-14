@@ -210,19 +210,16 @@ export const en: Dict = {
   install: {
     eyebrow: "Installation",
     title: "Your server, your data",
-    lead: "You need a Linux server with Docker and three domains: one for the LMS, one for learning packages and one for file downloads. One command starts everything: the PostgreSQL database, file storage, background jobs and HTTPS.",
+    lead: "You need a Linux server (x86_64 or ARM) and two addresses: one for the LMS and one for learning packages. The installer checks the server and sets everything up, in Docker or directly on the system: the PostgreSQL database, background jobs, HTTPS and the first administrator.",
     steps: [
-      "Clone the repository and create a .env settings file from the example.",
-      "Fill in the addresses, passwords and keys, the mail server and the first administrator.",
-      "Start the system. Certificates for all three domains are issued automatically.",
+      "Download the installer from the latest release.",
+      "Run it and answer its questions: addresses, modules, database, file storage, mail and the administrator.",
+      "Open the site. Certificates are issued automatically, and the installer shows the administrator's password at the end.",
     ],
-    code: `git clone https://github.com/sharapov-outsource/hubium.git && cd hubium
-cp .env.production.example .env
-# set APP_URL, CONTENT_HOST, S3_PUBLIC_URL, APP_SECRET, S3_SECRET_KEY,
-# POSTGRES_PASSWORD, SMTP_URL, MAIL_FROM and SEED_ADMIN_* in .env
-docker compose -f docker/compose.yml --env-file .env up -d --build`,
+    code: `curl -fsSLO https://github.com/sharapov-outsource/hubium-lms/releases/latest/download/install-hubium.sh
+sudo bash install-hubium.sh`,
     trial:
-      "For a trial on one computer you can skip the addresses: the system opens at https://lms.localhost. Add SEED_PROFILE=demo to start with sample courses and users.",
+      "For a trial on one computer, give the address lms.localhost and accept the demo data: the system opens at https://lms.localhost with sample courses and users. A new version installs with the same command and the upgrade option.",
     copy: "Copy",
     copied: "Copied",
     docs: "Backups, updates and monitoring (in Russian)",
@@ -248,7 +245,7 @@ docker compose -f docker/compose.yml --env-file .env up -d --build`,
       },
       {
         q: "Where is the data stored?",
-        a: "Only on your server: in a PostgreSQL database and S3-compatible storage. Use the built-in storage or an external one, such as Yandex Object Storage, VK Cloud or Selectel.",
+        a: "Only on your server: in a PostgreSQL database, with files on the server's disk or in S3-compatible storage, built in or external, such as Yandex Object Storage, VK Cloud or Selectel.",
       },
       {
         q: "Do I have to use AI?",
@@ -262,7 +259,7 @@ docker compose -f docker/compose.yml --env-file .env up -d --build`,
   },
   cta: {
     title: "Try Hubium LMS on your own server",
-    text: "One computer with Docker is enough for a trial.",
+    text: "One computer with Linux is enough for a trial.",
     github: "View the code on GitHub",
     contact: "Contact us",
   },

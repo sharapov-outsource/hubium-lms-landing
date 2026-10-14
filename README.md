@@ -1,6 +1,6 @@
 # Hubium LMS landing
 
-The one-page site of [Hubium LMS](https://github.com/sharapov-outsource/hubium), in Russian at `/` and English at `/en`. Built on the Hubium design system: Next.js 16, plain CSS on the system's tokens, a standalone Docker image.
+The one-page site of [Hubium LMS](https://github.com/sharapov-outsource/hubium-lms), in Russian at `/` and English at `/en`. Built on the Hubium design system: Next.js 16, plain CSS on the system's tokens, a standalone Docker image.
 
 ## Development
 

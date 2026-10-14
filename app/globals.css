@@ -220,6 +220,9 @@ main:focus {
 .btn-link {
   height: auto;
   padding-inline: 0;
+  /* a link may be longer than a phone screen is wide */
+  white-space: normal;
+  text-align: start;
   color: var(--accent);
   text-underline-offset: 4px;
 }
